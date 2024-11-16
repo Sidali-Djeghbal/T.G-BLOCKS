@@ -1,4 +1,4 @@
-## Index
+## Index - Specifications
 - [TG Blocks](#tg-blocks)
 - [I. Introduction](#i-introduction)
     - [I.1 Problem Statement](#i1-problem-statement)
