@@ -5,7 +5,6 @@ html{
 body {
   font-family: cascadia code;
   color: #fff;
-  background-color: #2A2929;
 }
 
 
@@ -100,7 +99,7 @@ body::-webkit-scrollbar-thumb {
   top: 0;
   width: 100%;
   font-weight: 300;
-  background: linear-gradient(to bottom, #252020, transparent);
+  background: linear-gradient(to bottom, #1d1d1d, transparent);
   position: fixed;
 
 }
@@ -234,7 +233,7 @@ svg {
 
 .bg-grey {
   --tw-bg-opacity: 1;
-  background-color: rgb(37 32 32 / var(--tw-bg-opacity));
+  background-color: #242424;
 }
 
 .bg-white {
@@ -289,7 +288,7 @@ svg {
   .tg-title {
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     font-weight: 500;
-    color: #252020;
+    color: #242424;
     letter-spacing: 3px;
   }
 
@@ -419,7 +418,7 @@ svg {
 
   .more-info-btn {
     font-weight: bolder;
-    color: #252020;
+    color: #242424;
     background-color: #fff;
     border: #fff solid 2px;
     z-index: 99999;
