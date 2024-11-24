@@ -1,0 +1,449 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: cascadia code;
+  color: #fff;
+
+}
+
+
+body {
+  --sb-track-color: #2d2d2d;
+  --sb-thumb-color: #232323;
+  --sb-size: 4px;
+}
+
+/** Scrollbar begin**/
+
+
+body {
+  --sb-track-color: #292929;
+  --sb-thumb-color: #6f6f6f;
+  --sb-size: 3px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 1px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 1px;
+  
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}
+
+/** Scrollbar End**/
+
+/** Navbar begin**/
+.navbar {
+  top: 0;
+  width: 100%;
+  font-weight: 300;
+  background: linear-gradient(to bottom, #252020, transparent);
+  position: fixed;
+
+}
+
+.nav-logo{
+  display: flex;
+  flex-direction: row;
+  line-height: 3;
+  gap: 1rem;
+
+}
+
+.nav-menu{
+  font-size: 16px;
+  right: 15%;
+  position: absolute;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+.navbar-link:hover{
+  transition: 400ms;
+  color: #fff;
+  text-shadow: 0 0 3px rgb(255, 255, 255);
+}
+
+.special-navbar-link{
+  animation: bounce 10s ease-in-out 1;
+}
+
+.special-navbar-link:hover{
+  transition: 400ms;
+  color: #ff0;
+  text-shadow: 0 0 1px #ff0, 0 0 1px #ff0, 0 0 1px #ff0, 0 0 2px #ff0, 0 0 2px #ff0, 0 0 15px #ff0, 0 0 3px #ff0;
+}
+
+/** Navbar end**/
+
+
+/** Elements costumized properties for betten tailwind styling (don't touch ml5r)**/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+b,
+img,
+svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.hidden {
+  display: none;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.w-responsive {
+  width: min(75vw, 90rem);
+}
+
+.max-w-\[800px\] {
+  max-width: 800px;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.bg-grey {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 32 32 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 243 235 / var(--tw-bg-opacity));
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.md\:h-8 {
+  height: 2rem;
+}
+
+.md\:w-\[70vw\] {
+  left: 1%;
+  width: 70vw;
+}
+
+/** Elements properties end**/
+
+
+/** Media query for large desktops website (ta9rad tna7iha w tdirha hya el default ila ma mchach andk le site**/
+
+@media screen and (min-width: 1600px) {
+
+  .main-page {
+    
+    height: 100vh;
+    width: 80%;
+    margin: 40px auto;
+
+  }
+
+  .welcome-page-title {
+    font-size: 22px;
+    font-weight: 300;
+    margin: 40% 0 0 150px;
+  }
+
+  .square-grid {
+    padding-top: 50px;
+    height: 800px;
+    z-index: -99999;
+  }
+
+  .tg-title {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-weight: 500;
+    color: #252020;
+    letter-spacing: 3px;
+  }
+
+  .techgeeks-blocks {
+    height: 110px;
+    line-height: normal;
+    font-size: 80px;
+    padding: 5px;
+  }
+
+  .tg-border{
+    position: absolute;
+    margin: 15px 0 0 15px;
+    border: 5px solid #ffffff;
+    color: #fff;
+    height: 137px;
+    width: 445px;
+  }
+  
+  .intro-text {
+    margin-top: 45px;
+    margin-left: 5%;
+    font-size: 16px;
+    max-width: 60%;
+    font-weight: 300;
+  }
+
+  .screenshots {
+    margin-top: 50px;
+    float: right;
+    right: 0;
+    position: absolute;
+    padding: 0 0 0 10%;
+  }
+
+  .screen1 {
+    border-radius: 15px;
+    float: right;
+    width: 85%;
+  }
+
+  .circles {
+    display: flex;
+    padding: 10px;
+    top: 3px;
+    right: 0;
+    position: absolute;
+    width: 120px;
+    height: 20px;
+  }
+
+  .circle1 {
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+    background-color: #00ff08;
+    border-radius: 50%;
+  }
+
+  .circle2 {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+    background-color: #ef0;
+    border-radius: 50%;
+  }
+
+  .circle3 {
+    margin-left: 5px;
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    border-radius: 50%;
+  }
+
+  .arrow {
+    float: left;
+    margin-top: 10px;
+    margin-left: -2%;
+    width: 100%;
+    height: 180px;
+    rotate: -40deg;
+  }
+
+  .screen2 {
+    border-radius: 15px;
+    float: right;
+    width: 60%;
+    margin-right: -20%;
+  }
+
+  .login-text {
+    text-align: center;
+    font-weight: 300;
+    width: 320px;
+    margin-top: 190px;
+    background-color: #404040;
+    border: #fff solid 1px;
+  }
+
+  .signin-text {
+    text-align: center;
+    font-weight: 300;
+    max-width: 350px;
+    margin-top: 20px;
+    background-color: #404040;
+    border: #fff solid 1px;
+  }
+
+  .links {
+    cursor: pointer;
+  }
+
+  .links:hover {
+    color: #ffe100;
+    transition: 400ms;
+  }
+
+  .buttons {
+    font-size: 22px;
+    margin: 45px 0 -110px 40px;
+    padding: 10px;
+    font-weight: 200;
+  }
+
+
+  .more-info-btn {
+    font-weight: bolder;
+    color: #252020;
+    background-color: #fff;
+    border: #fff solid 2px;
+    z-index: 99999;
+  }
+
+  .more-info-btn:hover {
+    background-color: #b9b7b7;
+    cursor: pointer;
+    transition: 400ms;
+  }
+
+  .start-btn {
+    font-weight: bolder;
+    color: #fff;
+    background-color: #404040;
+    border: #fff solid 1px;
+    z-index: 99999;
+  }
+
+  .start-btn:hover {
+    background-color: #636363;
+    cursor: pointer;
+    transition: 400ms;
+  }
+
+  .yellow-triangle {
+    display: inline-block;
+    height: 30px;
+  }
+
+  .second-page {
+    margin-top: 50px;
+    height: 100vh;
+    width: 100%;
+  }
+
+}
+
+/** End of large desktops media query**/
+
+/** begin of very large screens media query**/
+
+@media screen and (min-width: 2000px) {
+  .main-page {
+    max-width: 70vw;
+  }
+
+}
+
+/** end of very large screens media query**/
+
+
+
+/** begin of mobile phones media query**/
+
+@media screen and (max-width: 430px) {
+
+}
+
+/** end of mobile phones media query**/
+
+
+
+/** footer media query**/
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/** footer media query end**/
+

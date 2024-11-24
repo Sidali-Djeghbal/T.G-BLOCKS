@@ -1,11 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="assets/css/style.css"
+      rel="stylesheet"
+    />
+    <title>TechGeeks BLOCKS</title>
+  </head>
+
+  <body class="bg-grey">
+    <div class="navbar">
+      <div class=""></div>
+      <div class="mx-auto mt-2 w-responsive">
+        <div class="flex">
+          <a class="nav-logo" href="/"
+            ><img
+              src="assets/img/techGeeks-white-logo.svg"
+              alt="Tech Geeks Logo"
+              loading="lazy"
+              width="50"
+              height="45"
+            />
+            <h1 class="text-white ml-2 text-xl">TechGeeks - BLOCKS</h1>
+          </a>
+          <ul class="nav-menu flex">
+            <a href="#"><li class="navbar-link">Home</li></a>
+            <a href="#"><li class="navbar-link">About</li></a>
+            <a href="#"><li class="special-navbar-link">Try TG-BLOCKS</li></a>
+            <a href="#"><li class="navbar-link">Feedback</li></a>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-page w-responsive min-h-screen">
+      <main class="relative">
+        <section>
+          <div class="screenshots">
+            <div>
+              <img
+                class="screen1"
+                src="assets/img/Blockly_ScreenShot.png"
+                alt
+              />
+              <div class="circles">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+              </div>
+            </div>
+            <div class="arrow">
+              <img class="arrow" src="assets/img/white-arrow.svg" alt="arrow" />
+            </div>
+            <div>
+              <img
+                class="screen2"
+                src="assets/img/CompiledBlockScreenShot.png"
+                alt="compiled blockly screenshot"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="flex font-black">
+          <div class="grid grid-cols-1 lg:grid-cols-2">
+            <div>
+              <img
+                class="square-grid absolute -z-10 ml-8 mt-8 w-[40vw] max-w-[800px] md:w-[70vw] lg:w-[50vw]"
+                data-nimg="1"
+                src="assets/img/square-grid.svg"
+                alt="Square Grid"
+                loading="lazy"
+                width="500"
+                height="500"
+                decoding="async"
+                style="color: transparent"
+              />
+              <div class="welcome-page-title relative z-10">
+                <h1 class="text-sm mb-6">Welcome to,</h1>
+                <div class="h-4"></div>
+                <div class="flex items-center">
+                  <div class="relative">
+                    <div
+                      class="tg-border absolute bottom-0 right-0 h-full w-full border-white border-4"
+                      style="margin-bottom: -25px; margin-right: -25px"
+                    ></div>
+                    <div
+                      class="tg-title relative z-10 flex h-full w-full items-center justify-center"
+                    >
+                      <div class="w-fit p-2 bg-white">
+                        <h1 class="techgeeks-blocks">T.G - BLOCKS</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="h-4 md:h-8"></div>
+                <div class="flex items-center">
+                  <div class="relative h-auto w-auto">
+                    <div
+                      class="relative z-10 flex h-full w-full items-center justify-center"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="grid">
+            <div class="flex flex-col justify-around">
+              <div>
+                <div
+                  class="relative z-10 mt-8 text-white px-2 py-2 md:px-3 md:py-1"
+                >
+                  <p class="intro-text">
+                    &nbsp;&nbsp;&nbsp;A platform assists beginners in
+                    understanding the logic behind algorithms without the
+                    complications of programming language syntax and without the
+                    distraction of compiler errors.
+                  </p>
+                </div>
+              </div>
+              <div class="mx-8">
+                <div class="mx-8">
+                  <div class="mx-8">
+                    <div class="buttons flex p-1 mx-8">
+                      <div class="more-info-btn flex-row p-2 mx-8">
+                        <a href="#info-page"><h3>MORE INFO</h3></a>
+                      </div>
+                      <div class="start-btn flex-row p-2 mx-8">
+                        <h3>
+                          START LEARNING NOW
+                          <img
+                            class="yellow-triangle"
+                            src="assets/img/yellow-triangle.svg"
+                            alt="yellow triangle"
+                          />
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <div>
+                    <div class="relative grid mx-8">
+                      <div
+                        class="login-text flex flex-col gap-6 p-1 text-black"
+                      >
+                        <h3>
+                          Already have an account ?<strong class="links">
+                            Log in</strong
+                          >
+                        </h3>
+                      </div>
+                      <div
+                        class="signin-text flex flex-col gap-6 p-1 mt-4 text-black"
+                      >
+                        <h3>
+                          New to TG-Blocks ?<strong class="links">
+                            Create an account</strong
+                          >
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <hr class="second-page mb-10 mt-16 bg-white" id="info-page" />
+
+    <footer class="flex copyright">
+      <img
+        src="assets/img/techGeeks-white-logo.svg"
+        alt="Tech Geeks Logo"
+        loading="lazy"
+        width="80"
+        height="60"
+      />
+      <p class="copyright-text">©2024 All rights reserved - TechGeeks Club.</p>
+    </footer>
+  </body>
 </html>
